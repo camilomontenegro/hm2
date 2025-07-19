@@ -9,14 +9,10 @@ export const supabase = createClient(supabaseUrl, supabaseKey)
 
 // TypeScript types for our product data
 export interface Product {
-  id: string
-  name: string
-  description: string | null
-  price: number
-  image_url: string
-  category: string | null
-  stock_quantity: number
-  is_featured: boolean
+  id: number
   created_at: string
-  updated_at: string
+  title: string
+  price: number
+  image_irl: string
+  gender: string
 }

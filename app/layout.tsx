@@ -23,8 +23,12 @@ export const metadata: Metadata = {
     title: "H&M - Style yourself. Own the moment.",
     description: "Discover the latest fashion trends and styles at H&M.",
   },
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

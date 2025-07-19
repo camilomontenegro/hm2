@@ -19,8 +19,8 @@ export default function ProductCard({ product }: ProductCardProps) {
       {/* Product Image */}
       <div className="relative aspect-[3/4] overflow-hidden bg-gray-100">
         <Image
-          src={product.image_url}
-          alt={product.name}
+          src={product.image_irl}
+          alt={product.title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-110"
           sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
@@ -52,22 +52,12 @@ export default function ProductCard({ product }: ProductCardProps) {
       {/* Product Information */}
       <div className="pt-4 space-y-1">
         <h3 className="text-sm font-medium text-gray-900 line-clamp-2">
-          {product.name}
+          {product.title}
         </h3>
-        {product.description && (
-          <p className="text-xs text-gray-500 line-clamp-1">
-            {product.description}
-          </p>
-        )}
         <div className="flex items-center justify-between">
           <span className="text-sm text-gray-600 capitalize">
-            {product.category}
+            {product.gender}
           </span>
-          {product.stock_quantity < 10 && product.stock_quantity > 0 && (
-            <span className="text-xs text-orange-600 font-medium">
-              Only {product.stock_quantity} left
-            </span>
-          )}
         </div>
       </div>
     </div>
