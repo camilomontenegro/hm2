@@ -146,7 +146,7 @@ export default function ProductGrid({
       setProducts(filteredProducts)
 
       // Uncomment below when Supabase is configured
-      /*
+      
       let query = supabase
         .from('products')
         .select('*')
@@ -169,7 +169,7 @@ export default function ProductGrid({
       if (error) throw error
 
       setProducts(data || [])
-      */
+      
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An error occurred')
     } finally {
