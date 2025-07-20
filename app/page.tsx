@@ -13,7 +13,7 @@ export default function Home() {
       "query-input": "required name=search_term_string"
     }
   };
-
+  
   return (
     <>
       <script
